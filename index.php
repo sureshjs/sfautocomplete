@@ -11,20 +11,20 @@
 
 		<script>
 		$(document).ready(function(){
+			
 			$('#search').autocomplete({
 				source: 'search.php',
 				minLength: 2,
-				select: function(event, ui) {
-				}
+				disabled: false
+
 			});
 		});
-    </script>
+    	</script>
 	</head>
 	<body>
 		<div class="ui-widget">
 			<label for="search">Search</label>
-			<input type="text" id="search" name="search" />
+			<input type="text" id="search" />
 		</div>
-		<div id="test"></div>
 	</body>
 </html>

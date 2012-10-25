@@ -15,12 +15,14 @@
 //			UNION ALL SELECT name AS name FROM Artist) AS name WHERE name LIKE '%$autocomplete_value%'";
 
 	$query = mysql_query($sql);
-	echo $sql;  
-
+	
 	$results = array();
 	while ($row = mysql_fetch_array($query, MYSQL_ASSOC)) {
-		array_push($results, array('name' => $row['name']) );
+		array_push($results, array( 'label' => $row['name'],
+									'value' => $row['name']));
+
 	}
 
-	echo json_encode($results);
+	print json_encode($results);
+
 ?>
