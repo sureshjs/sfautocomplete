@@ -15,7 +15,10 @@
 			$('#search').autocomplete({
 				source: 'search.php',
 				minLength: 2,
-				disabled: false
+				select: function(event,ui) {
+					window.location = ("http://23.23.138.113/Symfony2/web/app_dev.php/artist/" + ui.item.value);
+					console.log(ui.item.value);
+				}
 
 			});
 		});
