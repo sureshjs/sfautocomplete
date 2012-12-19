@@ -16,7 +16,7 @@
 				source: 'search.php',
 				minLength: 2,
 				select: function(event,ui) {
-					window.location = ("http://23.23.138.113/Symfony2/web/app_dev.php/artist/" + ui.item.value);
+					window.location = ("http://localhost/Symfony2/web/app_dev.php/" + ui.item.link);
 					console.log(ui.item.value);
 				}
 
@@ -28,6 +28,6 @@
 		<div class="ui-widget">
 			<label for="search">Search</label>
 			<input type="text" id="search" />
-		</div>
+		</div>   
 	</body>
 </html>
