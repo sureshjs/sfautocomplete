@@ -1,4 +1,6 @@
 <?php
+
+	// CONFIRM LOCAL SETTINGS
 	$host = "localhost";
 	$user = "root";
 	$pass = "";

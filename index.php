@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 	<head>
+	
+		<!-- NEED TO CORRECT THIS BLOCK -->
 		<link rel="stylesheet" href="jqueryui/css/custom-theme/jquery-ui-1.9.0.custom.css">
 		<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
 		<script type="text/javascript" src="jqueryui/js/jquery-1.8.2.js"></script>
 		<script type="text/javascript" src="jqueryui/js/jquery-ui-1.9.0.custom.js"></script>
 		<style type="text/css">
+		<!-- -->
 
 		</style>
 
@@ -13,9 +16,11 @@
 		$(document).ready(function(){
 			
 			$('#search').autocomplete({
+				// AMEND THIS LINK
 				source: 'search.php',
 				minLength: 2,
 				select: function(event,ui) {
+					// AMEND THIS LINK
 					window.location = ("http://localhost/Symfony2/web/app_dev.php/" + ui.item.link);
 					console.log(ui.item.value);
 				}
